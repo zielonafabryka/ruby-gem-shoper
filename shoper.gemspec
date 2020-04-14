@@ -1,10 +1,10 @@
 Gem::Specification.new do |s|
   # Required BEGIN
   s.name = "shoper"
-  s.version = "0.0.1"
+  s.version = "0.0.1a"
   s.authors = ["Pawel 'felixd' Wojciechowski"]
   s.summary = %q{Shoper REST API}
-  s.files = Dir["lib/   *.rb"] + Dir["bin/*"]
+  s.files = Dir["lib/*.rb"] + Dir["bin/*"]
   s.files += Dir["[A-Z]*"] + Dir["test/**/*"]
   # Required END
   # Recommended BEGIN
