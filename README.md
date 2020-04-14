@@ -1,2 +1,7 @@
-# ruby-gem-shoper
-Shoper Ruby Gem
+# Shoper Ruby Gem REST API
+
+`gem install shoper`
+
+## Authors
+
+* Paweł 'felixd' Wojciechowski Konopnickiej.Com
