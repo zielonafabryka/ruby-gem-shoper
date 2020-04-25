@@ -57,7 +57,7 @@ class Shoper
                                                      @configuration[:shoper][:token],
                                  })
 
-    case p[:action]
+    case action
     when "get"
       res = r.get :params => data[:params]
     when "update"
@@ -65,7 +65,6 @@ class Shoper
     when "delete"
       res = r.delete
     when "insert"
-      puts "Dodawanie produktu"
       pp data[:data].to_json
       res = r.post data[:data].to_json, :content_type => :json
     when "list"
