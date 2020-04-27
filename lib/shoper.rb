@@ -74,25 +74,4 @@ class Shoper
     end
     pp JSON.parse(res)
   end
-
-  def update_resource(resource)
-
-    #       # p u
-    #
-  end
 end
-
-# res = api["products"].get :params => { :limit => 50 }
-# res = JSON.parse(res)
-# page = 1
-# while page <= res["pages"]
-#   res = api["products"].get :params => { :limit => 50, :page => page }
-#   res = JSON.parse(res)
-#   res["list"].each { |product|
-#     if bc[product["ean"]] != nil && bc[product["ean"]] != product["code"]
-#       p "ID: " + product["product_id"] + " EAN: " + product["ean"] + " CODE: " + product["code"] + " NEW CODE: " + bc[product["ean"]]
-#       # Update product
-#     end
-#   }
-#   page += 1
-# end
