@@ -58,3 +58,5 @@ build-iPhoneSimulator/
 run.sh
 tmp
 .DS_Store
+test.rb
+test.sh
