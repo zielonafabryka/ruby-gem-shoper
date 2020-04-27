@@ -47,7 +47,6 @@ class Shoper
       return { :error => true }
     end
 
-    pp endpoint
     # Check if Shoper Token is still valid
     self.get_token if Time.now > @configuration[:shoper][:token_expires]
 
@@ -65,13 +64,11 @@ class Shoper
     when "delete"
       res = r.delete
     when "insert"
-      pp data[:data].to_json
       res = r.post data[:data].to_json, :content_type => :json
     when "list"
       res = r.get
     else
       return { :error => true }
     end
-    pp JSON.parse(res)
   end
 end
