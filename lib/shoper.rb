@@ -66,7 +66,7 @@ class Shoper
     when "insert"
       res = r.post data[:data].to_json, :content_type => :json
     when "list"
-      res = r.get
+      res = r.get :params => data[:params]
     else
       return { :error => true }
     end
